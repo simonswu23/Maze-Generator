@@ -26,8 +26,6 @@ public class KruskalMinimumSpanningTreeFinder<G extends KruskalGraph<V, E>, V, E
 
     @Override
     public MinimumSpanningTree<V, E> findMinimumSpanningTree(G graph) {
-        // Here's some code to get you started; feel free to change or rearrange it if you'd like.
-
         // sort edges in the graph in ascending weight order
         List<E> edges = new ArrayList<>(graph.allEdges());
         edges.sort(Comparator.comparingDouble(E::weight));
