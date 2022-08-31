@@ -53,9 +53,7 @@ public class KruskalMinimumSpanningTreeFinder<G extends KruskalGraph<V, E>, V, E
                 numEdge++;
             }
         }
-
-        // ask TA why there is an error here.
-
+        
         if ((vertices.size() -1 != numEdge && numEdge != 0) || 
             (edges.size() == 0 && (vertices.size() > 1))) {
             return new MinimumSpanningTree.Failure<>();
